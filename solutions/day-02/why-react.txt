@@ -1,0 +1,9 @@
+1. Why did you chose to use react?
+    I mainly choose to use React because it's fast and provide us to create reusable components, but also because it's easier to create a dynamic and well optimized web application with React.
+
+2. What measures do you use to know popularity ?
+    To measure popularity, I'm checking numbers of stars, forks and watchers, which is giving me a first idea of popularity of a project.
+    I also check on Stackoverflow if there is a lot of people which are talking about the project and helping each others.
+
+3. What is more popular, React or Vue ?
+    Currently (02/2022), Vue is just little more popular than React based on stars, but they're pretty equals in term of popularity.

@@ -1,0 +1,26 @@
+1. What is React?
+    React is a JavaScript library developped by Facebook and originally publicated in 2013.
+    Each React application is a single page application, due to React virtual DOM usage which automatically only updates element that needs changing.
+    React allow us to use reusable components.
+
+2. What is a library?
+    A library is a set of functionalities already developed for us, which allow us to use them in our projects and to develop faster an adapted application.
+
+3. What is a single page application?
+    A single page application is an application that is only using one HTML page.
+
+4. What is a component ?
+    A component is a reusable part of code, for example we could have an Header component in React, which contains other components like Image, Navbar, Link etc...
+    Components are really powerful to gain development time, because they're reusable in any other part of the application, which also avoid code duplications.
+
+5. What is the latest version of React?
+    Currently (02/2022), the latest version of React is 17.0.2.
+
+6. What is DOM?
+    DOM (Document Object Model) is the representation of an HTML page, really useful for inserting or updating elements in JS.
+
+7. What is React Virtual DOM?
+    React Virtual DOM is a virtual DOM used by React to only updates the elements that needs to be updated, which allow us to never directly interact with the DOM, because React Virtual DOM is doing everything for us.
+
+8. What does a web application or a website(composed of) have?
+    A web application can be composed of HTML pages, JavaScript scripts and CSS stylesheets.

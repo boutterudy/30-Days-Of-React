@@ -1,0 +1,21 @@
+1. What is an HTML element?
+    An HTML element is a part of code, which represent an element in HTML.
+    For example, <p></p> is a paragraph HTML element, or <h1></h1> is a title HTML element.
+
+2. How to write a self closing HTML element?
+    To write a self closing HTML element, we just need to add a slash before closing tag.
+    For example, <br />, or <img />.
+
+3. What is an HTML attribute? Write some of them
+    An HTML attribute is added informations to HTML element, which for example allow us to define an image source, or a unique id for any HTML element.
+    For example, <img src="example.jpg" alt="Example image" /> where src and alt are both HTML attributes.
+
+4. What is JSX?
+    JSX is a kind of mix between JavaScript and HTML. It's allowing us to write HTML in JS, for example to store an HTML element into a JS variable and use it in JS code. 
+    JSX will then be converted to JavaScript on browser using a transpiler.
+
+5. What is babel?
+    Babel is a library which transpiles JSX to pure JS and latest JS to older version, for better compatibily supports.
+
+6. What is a transpiler?
+    A transpiler is translating a source code form a language to another one, or updating it for compatibily reasons.

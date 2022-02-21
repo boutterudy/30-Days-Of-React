@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+        rel="stylesheet" />
+
+    <title>30 Days Of React Challenge</title>
+</head>
+
+<body>
+    <div class="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // To get the root element from the HTML document
+        const rootElement = document.querySelector('.root')
+        // JSX element, header
+        const welcome = 'Welcome to 30 Days Of React Challenge'
+        const title = 'Getting Started React'
+        const subtitle = 'JavaScript Library'
+        const author = {
+            firstName: 'Asabeneh',
+            lastName: 'Yetayeh',
+        }
+        const date = 'Oct 2, 2020'
+
+        // JSX element, header
+        const header = (
+            <header>
+                <div className='header-wrapper'>
+                    <h1>{welcome}</h1>
+                    <h2>{title}</h2>
+                    <h3>{subtitle}</h3>
+                    <p>
+                        Instructor: {author.firstName} {author.lastName}
+                    </p>
+                    <small>Date: {date}</small>
+                </div>
+            </header>
+        )
+
+        const numOne = 3
+        const numTwo = 2
+
+        const result = (
+            <p>
+                {numOne} + {numTwo} = {numOne + numTwo}
+            </p>
+        )
+
+        const yearBorn = 1820
+        const currentYear = 2020
+        const age = currentYear - yearBorn
+        const personAge = (
+            <p>
+                {' '}
+                {author.firstName} {author.lastName} is {age} years old
+            </p>
+        )
+
+        // JSX element, main
+        const techs = ['HTML', 'CSS', 'JavaScript']
+        const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
+
+        // Create a style object for the main JSX solution
+        const mainStyles = {
+            backgroundColor: '#61dbfb',
+        }
+
+        // JSX element, main
+        const main = (
+            // Implementing style
+            <main style={mainStyles}>
+                <div className='main-wrapper'>
+                    <p>
+                        Prerequisite to get started{' '}
+                        <strong>
+                            <em>react.js</em>
+                        </strong>
+                        :
+                    </p>
+                    <ul>{techsFormatted}</ul>
+                    {result}
+                    {personAge}
+                </div>
+            </main>
+        )
+
+        const copyRight = 'Copyright 2020'
+
+        // Create a style object for the footer solution
+        const footerStyle = {
+            textAlign: "center",
+            padding: "6px 12px",
+            backgroundColor: "#fb6161",
+            fontSize: "12px",
+            fontStyle: "italic",
+        }
+
+        // JSX element, footer
+        const footer = (
+            // Implementing style
+            <footer style={footerStyle}>
+                <div className='footer-wrapper'>
+                    <p>{copyRight}</p>
+                </div>
+            </footer>
+        )
+
+        // Create a style object for app solution
+        const appStyles = {
+            fontFamily: "Helvetica Neue, Arial, sans-serif",
+        }
+
+        // JSX element, app
+        const app = (
+            <div style={appStyles} className='app'>
+                {header}
+                {main}
+                {footer}
+            </div>
+        )
+
+        // we render the JSX element using the ReactDOM package
+        ReactDOM.render(app, rootElement)
+    </script>
+</body>
+
+</html>
