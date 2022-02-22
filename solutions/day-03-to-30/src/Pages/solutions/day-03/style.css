@@ -1,0 +1,76 @@
+.level1 {
+    list-style: decimal;
+}
+
+.level1 h3 {
+    margin: 0;
+}
+
+.level1 li {
+    margin-bottom: 16px;
+}
+
+.level1 li:last-of-type {
+    margin-bottom: 0;
+}
+
+.level1 p {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.level2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.front-techs {
+    margin-bottom: 46px;
+}
+
+.front-techs h2 {
+    text-align: center;
+}
+
+.front-techs-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.front-techs-images img {
+    max-width: 20%;
+}
+
+.newsletter {
+    text-align: center;
+    background-color: #c2e6f4;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    border-radius: 24px;
+}
+
+.newsletter h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.newsletter p {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.newsletter-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.newsletter-inputs input {
+    margin-right: 16px;
+}
+
+.newsletter-inputs input:last-of-type {
+    margin-right: 0;
+}

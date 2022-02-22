@@ -1,0 +1,56 @@
+.userCard {
+    border-radius: 8px;
+    background-color: white;
+    padding: 24px 36px;
+}
+
+.userCard img {
+    width: 162px;
+    height: 162px;
+    border-radius: 100%;
+}
+
+.userName {
+    text-transform: uppercase;
+}
+
+.userName svg {
+    fill: #2acfcf;
+    width: 20px;
+}
+
+.userSkills {
+    margin-bottom: 36px;
+}
+
+.userSkills h1 {
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+.userSkills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 6px;
+    margin: 0;
+}
+
+.userSkills ul li {
+    background-color: #2acfcf;
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+    min-width: 60px;
+    text-align: center;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+.userJoinedOn svg {
+    position: relative;
+    top: 0.325em;
+    width: 1em;
+    margin-right: 0.2em;
+}

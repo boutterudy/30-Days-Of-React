@@ -1,0 +1,38 @@
+* {
+    font-family: "Sora", sans-serif;
+}
+
+body {
+    background-color: #f0f1f7;
+
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+input {
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+button {
+    background-color: #f37474;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 16px 24px;
+}
+
+button.large {
+    padding: 16px 148px;
+}
+
+button:hover {
+    cursor: pointer;
+}
