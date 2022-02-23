@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Day03 from "./Pages/solutions/day-03";
-import App from "./Components/App";
+import Day04 from "./Pages/solutions/day-04";
+import App from "./Layouts/App";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 const rootElement = document.getElementById("root");
 
@@ -10,6 +11,7 @@ const app = (
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="solutions/day-03" element={<Day03 />} />
+            <Route path="solutions/day-04" element={<Day04 />} />
         </Routes>
     </BrowserRouter>
 );

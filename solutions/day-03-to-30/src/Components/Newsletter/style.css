@@ -1,0 +1,32 @@
+.newsletter {
+    text-align: center;
+    background-color: #c2e6f4;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    border-radius: 24px;
+}
+
+.newsletter h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.newsletter p {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.newsletter-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.newsletter-inputs input {
+    margin-right: 16px;
+}
+
+.newsletter-inputs input:last-of-type {
+    margin-right: 0;
+}

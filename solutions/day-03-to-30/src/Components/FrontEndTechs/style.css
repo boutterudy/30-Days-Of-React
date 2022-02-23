@@ -1,0 +1,17 @@
+.front-techs {
+    margin-bottom: 46px;
+}
+
+.front-techs h2 {
+    text-align: center;
+}
+
+.front-techs-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.front-techs-images img {
+    max-width: 20%;
+}

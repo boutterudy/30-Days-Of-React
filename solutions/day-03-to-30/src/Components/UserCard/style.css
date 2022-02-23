@@ -11,10 +11,15 @@
 }
 
 .userName {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     text-transform: uppercase;
 }
 
 .userName svg {
+    margin-left: 8px;
     fill: #2acfcf;
     width: 20px;
 }

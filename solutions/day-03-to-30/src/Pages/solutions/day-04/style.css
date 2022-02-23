@@ -1,0 +1,9 @@
+.level1 .components {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.level1 .components * {
+    margin-top: 10px;
+}

@@ -1,8 +1,8 @@
-import HtmlLogo from "../../../Assets/Images/html_logo.png";
-import CssLogo from "../../../Assets/Images/css_logo.png";
-import ReactLogo from "../../../Assets/Images/react_logo.png";
-import style from "./style.css";
+import "./style.css";
 import UserCard from "../../../Components/UserCard";
+import QuestionsAnswers from "../../../Components/QuestionsAnswers";
+import FrontEndTechs from "../../../Components/FrontEndTechs";
+import Newsletter from "../../../Components/Newsletter";
 
 export default function Day03() {
     const level1 = [
@@ -54,41 +54,14 @@ export default function Day03() {
 
     const level2 = (
         <div className="level2">
-            <section className="front-techs">
-                <h2>Front End Technologies</h2>
-                <div className="front-techs-images">
-                    <img src={HtmlLogo} alt="HTML logo" />
-                    <img src={CssLogo} alt="CSS logo" />
-                    <img src={ReactLogo} alt="React logo" />
-                </div>
-            </section>
-            <section className="newsletter">
-                <h2>Subscribe</h2>
-                <p>
-                    Sign up with your email address to receive news and updates.
-                </p>
-                <div className="newsletter-inputs">
-                    <input type="text" placeholder="First name" />
-                    <input type="text" placeholder="Last name" />
-                    <input type="email" placeholder="Email" />
-                </div>
-                <button type="button" className="large">
-                    Subscribe
-                </button>
-            </section>
+            <FrontEndTechs />
+            <Newsletter />
         </div>
     );
 
     return (
         <div>
-            <ul className="level1">
-                {level1.map((question, index) => (
-                    <li key={index}>
-                        <h3 className="question">{question.question}</h3>
-                        <p className="answer">{question.answer}</p>
-                    </li>
-                ))}
-            </ul>
+            <QuestionsAnswers list={level1} />
             {level2}
             <UserCard />
         </div>
