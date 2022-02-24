@@ -6,6 +6,9 @@ import Input from "../../../Components/Input";
 import Newsletter from "../../../Components/Newsletter";
 import QuestionsAnswers from "../../../Components/QuestionsAnswers";
 import UserCard from "../../../Components/UserCard";
+import HtmlLogo from "../../../Assets/Images/html_logo.png"
+import CssLogo from "../../../Assets/Images/css_logo.png"
+import ReactLogo from "../../../Assets/Images/react_logo.png"
 import "./style.css"
 
 const Day04 = () => {
@@ -49,6 +52,63 @@ const Day04 = () => {
         }
     ]
 
+    // FrontEndTechs list
+    const techs = [
+        {
+            'name': 'HTML',
+            'logo': HtmlLogo,
+        },
+        {
+            'name': 'CSS',
+            'logo': CssLogo,
+        },
+        {
+            'name': 'React',
+            'logo': ReactLogo,
+        }
+    ]
+
+    // Newsletter description
+    const newsletterDescription = 'Sign up with your email address to receive news and updates.'
+
+    // UserCard skills
+    const skills = [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'TypeScript',
+        'Markdown',
+        'Java',
+        'ReactJS',
+        'Bootstrap',
+        'jQuery',
+        'Next.js',
+        'NestJS',
+        'Symfony 5',
+        'Xamarin',
+        'Ioninc',
+        'TypeORM',
+        'MySQL',
+        'PL SQL',
+        'Doctrine',
+        'Oracle Database',
+        'SQL Server',
+        'Windows',
+        'Linux',
+        'Mac',
+        'Merise',
+        'UML',
+        'Agile (SCRUM)',
+        'Git',
+        'Postman',
+        'WAMP',
+        'Android Studio',
+        'Atom',
+        'PHP Storm',
+        'VS Code',
+        'Eclipse'
+    ]
+
     return (
         <div>
             <div className="level1">
@@ -60,12 +120,12 @@ const Day04 = () => {
                 <AlertBox type="warning" />
             </div>
             <div className="level2">
-                <FrontEndTechs />
-                <Newsletter />
+                <FrontEndTechs list={techs} />
+                <Newsletter description={newsletterDescription} />
             </div>
             <div className="level3">
                 <HexaColorsGenerator number="5" />
-                <UserCard />
+                <UserCard name="Rudy Boutte" description="Application Designer Developer, France" skills={skills} joinedOn="Feb 20, 2022" image="https://media-exp1.licdn.com/dms/image/C5603AQE0dlK4_TaarQ/profile-displayphoto-shrink_800_800/0/1645093529353?e=1651104000&v=beta&t=Xw7brFbPjTUQVy4__fYLPr4l1gp9TokX8iwNWiWDkJU" />
             </div>
         </div>
     )

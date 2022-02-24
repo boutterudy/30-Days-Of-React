@@ -47,7 +47,7 @@ export default function App() {
 
     // JSX element, main
     const techs = ["HTML", "CSS", "JavaScript"];
-    const techsFormatted = techs.map((tech) => <li>{tech}</li>);
+    const techsFormatted = techs.map((tech, index) => <li key={index}>{tech}</li>);
 
     // JSX element, main
     const main = (

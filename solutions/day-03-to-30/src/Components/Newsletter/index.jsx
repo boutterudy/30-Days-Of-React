@@ -1,11 +1,11 @@
 import './style.css'
 
-const Newsletter = () => {
+const Newsletter = (props) => {
     return (
         <section className="newsletter">
             <h2>Subscribe</h2>
             <p>
-                Sign up with your email address to receive news and updates.
+                {props.description}
             </p>
             <div className="newsletter-inputs">
                 <input type="text" placeholder="First name" />
