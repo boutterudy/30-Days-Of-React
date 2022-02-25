@@ -1,0 +1,58 @@
+.worldPopulationGraph > h2,
+.worldPopulationGraph > p {
+    text-align: center;
+}
+
+.worldPopulationGraph > h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.worldPopulationGraph > p {
+    font-size: 1.3em;
+    margin: 0.5em 0;
+}
+
+.worldPopulationGraph > p.small {
+    font-size: 0.7em;
+    margin-bottom: 1em;
+}
+
+.worldPopulationGraph .data {
+    max-width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
+    grid-auto-columns: max-content;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.worldPopulationGraph .countries li {
+    text-transform: uppercase;
+}
+
+.worldPopulationGraph .countries,
+.worldPopulationGraph .populations {
+    width: max-content;
+}
+
+.worldPopulationGraph .countries,
+.worldPopulationGraph .populationGraphs,
+.worldPopulationGraph .populations {
+    list-style-type: none;
+    padding: 0;
+}
+
+.worldPopulationGraph .countries li,
+.worldPopulationGraph .populationGraphs li,
+.worldPopulationGraph .populations li {
+    margin-bottom: 10px;
+    height: 1.5em;
+}
+
+.worldPopulationGraph .populationGraphs li {
+    background-color: #ffa500;
+    flex-grow: 1;
+}

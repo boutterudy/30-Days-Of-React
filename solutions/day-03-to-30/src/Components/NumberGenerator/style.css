@@ -1,0 +1,42 @@
+.generatedNumbers > h2,
+.generatedNumbers > p {
+    text-align: center;
+}
+
+.generatedNumbers > h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.generatedNumbers > p {
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+}
+
+.generatedNumbers .numbersWrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 2px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.generatedNumbers .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75em;
+    color: white;
+    aspect-ratio: 1;
+}
+
+.generatedNumbers .odd {
+    background-color: #fddb3a;
+}
+
+.generatedNumbers .even {
+    background-color: #21bf73;
+}
+
+.generatedNumbers .prime {
+    background-color: #fd5e53;
+}
