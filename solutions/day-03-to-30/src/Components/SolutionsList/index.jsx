@@ -18,6 +18,10 @@ export default function SolutionsList() {
             day: 6,
             solution: "/solutions/day-06",
         },
+        {
+            day: 7,
+            solution: "/solutions/day-07",
+        },
     ];
 
     return (
