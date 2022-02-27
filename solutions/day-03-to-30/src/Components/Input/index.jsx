@@ -1,5 +1,9 @@
-const Input = (props) => {
-    return <input type={props.type || 'text'}/>
+import React from "react";
+
+class Input extends React.Component {
+    render() {
+        return <input type={this.props.type || 'text'}/>
+    }
 }
 
 export default Input;

@@ -1,34 +1,36 @@
 import './style.css'
+import React from 'react'
 
-const AlertBox = (props) => {
-    let show = true
-
-    function closeAlert(e) {
+class AlertBox extends React.Component {
+    closeAlert(e) {
         e.preventDefault()
         e.target.parentElement.remove()
     }
 
-    let content
-    switch (props.type) {
-        case 'warning':
-            content = 'Warning!'
-            break;
-        
-        case 'success':
-            content = 'Success!'
-            break;
+    render() {
+        let content
 
-        default:
-            content = 'Neutral.'
-            break;
+        switch (this.props.type) {
+            case 'warning':
+                content = 'Warning!'
+                break;
+            
+            case 'success':
+                content = 'Success!'
+                break;
+
+            default:
+                content = 'Neutral.'
+                break;
+        }
+        
+        return (
+            <div className={"alertBox " + (this.props.type || 'info')}>
+                <p>{content}</p>
+                <div className='close' onClick={this.closeAlert}>&times;</div>
+            </div>
+        )
     }
-    
-    return (
-        <div className={"alertBox " + (props.type || 'info')}>
-            <p>{content}</p>
-            <div className='close' onClick={closeAlert}>&times;</div>
-        </div>
-    )
 }
     
 export default AlertBox;
