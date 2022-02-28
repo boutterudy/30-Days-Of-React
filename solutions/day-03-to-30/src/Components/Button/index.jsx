@@ -2,7 +2,7 @@ import React from "react";
 
 class Button extends React.Component {
     render() {
-        return <button>{this.props.children}</button>
+        return <button onClick={this.props.onClick ? this.props.onClick : null}>{this.props.children}</button>
     }
 }
 
