@@ -9,6 +9,7 @@ import Day06 from "./Pages/solutions/day-06";
 import Day07 from "./Pages/solutions/day-07";
 import Day08 from "./Pages/solutions/day-08";
 import Day09 from "./Pages/solutions/day-09";
+import Day10 from "./Pages/solutions/day-10";
 const rootElement = document.getElementById("root");
 
 const app = (
@@ -22,6 +23,7 @@ const app = (
             <Route path="solutions/day-07" element={<Day07 />} />
             <Route path="solutions/day-08" element={<Day08 />} />
             <Route path="solutions/day-09" element={<Day09 />} />
+            <Route path="solutions/day-10" element={<Day10 />} />
         </Routes>
     </BrowserRouter>
 );
