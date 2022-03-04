@@ -40,6 +40,10 @@ class SolutionsList extends React.Component {
                 day: 11,
                 solution: "/solutions/day-11",
             },
+            {
+                day: 12,
+                solution: "/solutions/day-12",
+            },
         ];
     
         return (
