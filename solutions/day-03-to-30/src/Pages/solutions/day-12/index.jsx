@@ -1,5 +1,6 @@
 import { useState } from "react"
 import QuestionsAnswers from "../../../Components/QuestionsAnswers"
+import isEmail from 'validator/lib/isEmail'
 import './style.css'
 
 const Day12 = () => {
@@ -75,8 +76,9 @@ const Day12 = () => {
     const validation = () => {
         const   firstNameValid = firstName.length > 1,
                 lastNameValid = lastName.length > 1,
-                emailValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
-        
+                //emailValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+                emailValid = isEmail(email)
+                
         let newErrors = []
         if(!firstNameValid) newErrors.push('Firstname is not valid!')
         if(!lastNameValid) newErrors.push('Lastname is not valid')
