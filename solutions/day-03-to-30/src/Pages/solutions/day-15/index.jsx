@@ -52,14 +52,6 @@ const Day15 = () => {
     const [isRed, setRed] = useState(!(time % 2))
     const [isBlue, setBlue] = useState(time% 2)
     
-    const [divClass, setDivClass] = useState(
-        classNames({
-            level2: true,
-            blue: isBlue,
-            red: isRed
-        })
-    )
-    
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(time => time + 1)
