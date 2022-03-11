@@ -3,72 +3,19 @@ import { Link } from "react-router-dom";
 
 class SolutionsList extends React.Component {
     render() {
-        const solutions = [
-            {
-                day: 3,
-                solution: "/solutions/day-03",
-            },
-            {
-                day: 4,
-                solution: "/solutions/day-04",
-            },
-            {
-                day: 5,
-                solution: "/solutions/day-05",
-            },
-            {
-                day: 6,
-                solution: "/solutions/day-06",
-            },
-            {
-                day: 7,
-                solution: "/solutions/day-07",
-            },
-            {
-                day: 8,
-                solution: "/solutions/day-08",
-            },
-            {
-                day: 9,
-                solution: "/solutions/day-09",
-            },
-            {
-                day: 10,
-                solution: "/solutions/day-10",
-            },
-            {
-                day: 11,
-                solution: "/solutions/day-11",
-            },
-            {
-                day: 12,
-                solution: "/solutions/day-12",
-            },
-            {
-                day: 13,
-                solution: "/solutions/day-13",
-            },
-            {
-                day: 14,
-                solution: "/solutions/day-14",
-            },
-            {
-                day: 15,
-                solution: "/solutions/day-15",
-            },
-            {
-                day: 16,
-                solution: "/solutions/day-16",
-            }
-        ];
-    
+        let solutions = [];
+        for (let i = 3; i <= 30; i++) {
+            if (i < 10) i = `0${i}`;
+            solutions.push({
+                day: i,
+                solution: "/solutions/day-" + i,
+            });
+        }
         return (
             <ul>
                 {solutions.map((solution, index) => (
                     <li key={index}>
-                        <Link to={solution.solution}>
-                            Day {solution.day}
-                        </Link>
+                        <Link to={solution.solution}>Day {solution.day}</Link>
                     </li>
                 ))}
             </ul>
@@ -76,4 +23,4 @@ class SolutionsList extends React.Component {
     }
 }
 
-export default SolutionsList
+export default SolutionsList;
