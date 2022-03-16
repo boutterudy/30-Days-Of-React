@@ -16,6 +16,7 @@ import Day15 from "../../Pages/solutions/day-15";
 import Day16 from "../../Pages/solutions/day-16";
 import Day17 from "../../Pages/solutions/day-17";
 import Day18 from "../../Pages/solutions/day-18";
+import Day19 from "../../Pages/solutions/day-19";
 
 const DaySolution = () => {
     let solution,
@@ -83,6 +84,10 @@ const DaySolution = () => {
 
         case "18":
             solution = <Day18 />;
+            break;
+
+        case "19":
+            solution = <Day19 />;
             break;
 
         default:

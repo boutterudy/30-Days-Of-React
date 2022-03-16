@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        margin: 15px;
+        text-transform: uppercase;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &.selected {
+                border-bottom: 3px solid #61dbfb;
+            }
+        }
+    }
+}
