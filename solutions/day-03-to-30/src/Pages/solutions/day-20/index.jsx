@@ -5,7 +5,7 @@ import CatsList from "../../../Components/CatsList";
 const Day20 = () => {
     return (
         <div>
-            <Header day="19">
+            <Header day="20">
                 <CatsParadise noCountries />
             </Header>
             <CatsList withFilters />
