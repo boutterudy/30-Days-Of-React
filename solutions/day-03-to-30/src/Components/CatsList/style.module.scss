@@ -52,3 +52,21 @@ $cardList: 400px;
         }
     }
 }
+
+.catsFilter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    font-size: 1.65rem;
+    justify-content: space-around;
+
+    div {
+        border: 1px solid #c2bfbf;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        margin: 5px 20px 5px 0;
+        font-weight: 400;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+}

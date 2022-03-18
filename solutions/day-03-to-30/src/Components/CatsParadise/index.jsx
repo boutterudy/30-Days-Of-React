@@ -30,8 +30,8 @@ const CatsParadise = ({ noCountries }) => {
                 (cats.reduce(
                     (total, next) =>
                         total +
-                        (next.life_span.split(/(\s+)/)[0] +
-                            next.life_span.split(/(\s+)/)[1]) /
+                        (parseInt(next.life_span.split(/(\s+)/)[0]) +
+                            parseInt(next.life_span.split(/(\s+)/)[4])) /
                             2,
                     0
                 ) /
@@ -45,8 +45,8 @@ const CatsParadise = ({ noCountries }) => {
                 (cats.reduce(
                     (total, next) =>
                         total +
-                        (next.weight.metric.split(/(\s+)/)[0] +
-                            next.weight.metric.split(/(\s+)/)[1]) /
+                        (parseInt(next.weight.metric.split(/(\s+)/)[0]) +
+                            parseInt(next.weight.metric.split(/(\s+)/)[4])) /
                             2,
                     0
                 ) /
