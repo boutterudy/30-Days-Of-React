@@ -71,7 +71,7 @@ const CatsParadise = ({ noCountries }) => {
             setCountryWithHighestNumberOfCats(count[0]);
             setCountries(count);
         }
-    }, [cats]);
+    }, [cats, noCountries]);
 
     let content;
     if (cats.length === 0) {
