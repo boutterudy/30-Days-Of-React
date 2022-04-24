@@ -1,3 +1,4 @@
+import Day22Form from "../../../Components/Day22Form";
 import QuestionsAnswers from "../../../Components/QuestionsAnswers";
 
 const Day22 = () => {
@@ -73,6 +74,7 @@ const Day22 = () => {
     return (
         <div>
             <QuestionsAnswers list={level1} />
+            <Day22Form />
         </div>
     );
 };
