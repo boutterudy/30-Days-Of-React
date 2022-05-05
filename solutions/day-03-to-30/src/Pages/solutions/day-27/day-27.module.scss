@@ -1,0 +1,111 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  text-align: center;
+
+  .title {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 20px 0px 0px;
+  }
+
+  .detail {
+    font-size: 40px;
+    margin: 0px 0px 30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.content {
+  .generator {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    .searchBar {
+      font-family: 'Roboto Slab', serif;
+      max-height: 53px !important;
+      width: 75% !important;
+      margin: 15px 0;
+      min-width: 250px;
+      outline: none;
+      font-size: 16px;
+      border: 1px #eadef5;
+      padding: 15px 20px;
+      border-radius: 10px;
+      line-height: inherit;
+      color: #4e5255;
+
+      &:focus,
+      &:hover {
+        background-color: #eadef5;
+      }
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      &[type='number'] {
+        -moz-appearance: textfield;
+      }
+    }
+
+    .generateButton {
+      font-family: 'Roboto Slab', serif;
+      height: 53px !important;
+      width: 20%;
+      padding: 15px 35px;
+      font-size: 20px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      background: #595dff;
+      text-transform: uppercase;
+      outline: none;
+      margin: 30px 0;
+    }
+  }
+
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+    .single {
+      cursor: pointer;
+      width: 160px;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      letter-spacing: 0.0625em;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      padding: 30px;
+      box-sizing: border-box;
+      font-weight: 500;
+
+      p {
+        margin: 0;
+      }
+
+      i {
+        font-size: 28px;
+      }
+    }
+  }
+}

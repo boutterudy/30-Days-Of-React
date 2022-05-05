@@ -1,17 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./Layouts/App";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import DaySolution from "./Layouts/DaySolution";
-const rootElement = document.getElementById("root");
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './Layouts/App';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import DaySolution from './Layouts/DaySolution';
+import 'remixicon/fonts/remixicon.css';
+const rootElement = document.getElementById('root');
 
 const app = (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="solutions/day-:number" element={<DaySolution />} />
-        </Routes>
-    </BrowserRouter>
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<App />} />
+      <Route path='solutions/day-:number' element={<DaySolution />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 // we render the JSX element using the ReactDOM package
