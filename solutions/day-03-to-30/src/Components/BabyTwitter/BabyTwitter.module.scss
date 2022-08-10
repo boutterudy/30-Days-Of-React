@@ -1,0 +1,205 @@
+$border-color: #eff3f4;
+$spinnerColor: #1d9bf0;
+
+// Spinner animations
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+// Mobile
+body {
+  background-color: #ffffff;
+  margin: 0;
+
+  * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Helvetica, Arial, sans-serif;
+    color: #0f1419;
+  }
+
+  .babyTwitter {
+    width: 100vw;
+    max-width: 100vw;
+    border-right: $border-color solid 1px;
+    border-left: $border-color solid 1px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+      clear: both;
+      margin: 20px auto;
+      border: 3px rgba($spinnerColor, 0.25) solid;
+      border-top: 3px rgba($spinnerColor, 1) solid;
+      border-radius: 50%;
+      -webkit-animation: spCircRot 0.8s infinite linear;
+      animation: spCircRot 0.8s infinite linear;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: -0.5px;
+      height: 53px;
+      justify-content: space-between;
+      z-index: 1000;
+
+      .pageTitle {
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin: 0;
+      }
+
+      .bestTweets {
+        filter: grayscale(100%);
+        user-select: none;
+      }
+    }
+
+    .postForm {
+      display: flex;
+      flex-direction: row;
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: #ffffff;
+      border-bottom: $border-color solid 1px;
+
+      .formWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 8px;
+
+        .inputWrapper {
+          display: flex;
+
+          .postInput {
+            padding: 0;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-radius: 0;
+            box-shadow: none;
+            width: 100%;
+            white-space: pre-wrap;
+            font-size: 20px;
+            border: none;
+            resize: none;
+            height: 20px;
+            line-height: 24px;
+            overflow: hidden;
+          }
+        }
+
+        .actionsWrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 12px;
+
+          .othersWrapper {
+            display: flex;
+            flex-direction: row;
+
+            .publishButton {
+              background-color: #1d9bf0;
+              color: #ffffff;
+              margin-left: 12px;
+              min-width: 36px;
+              min-height: 36px;
+              transition-property: background-color, box-shadow;
+              transition-duration: 0.2s;
+              padding: 0;
+              padding-left: 16px;
+              padding-right: 16px;
+              border: #00000000 solid 1px;
+              border-radius: 9999px;
+              font-size: 15px;
+              font-weight: 700;
+
+              &:disabled {
+                opacity: 0.5;
+              }
+            }
+          }
+
+          .postOptions {
+            display: flex;
+            flex-direction: row;
+            .iconWrapper {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 36px;
+              height: 36px;
+              background-color: #00000000;
+              transition-property: background-color, box-shadow;
+              transition-duration: 0.2s;
+              border-radius: 50%;
+
+              /*
+              &:hover {
+                cursor: pointer;
+                background-color: #1d9bf01a;
+              }
+              */
+
+              i {
+                color: #1d9bf0e6;
+                font-size: 20px;
+
+                &:global(.las),
+                &:global(.la) {
+                  font-size: 22px;
+                }
+
+                &.disabled {
+                  opacity: 0.5;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .profilePicture {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        padding-top: 4px;
+        flex-basis: 48px;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 769px) {
+  body {
+    .babyTwitter {
+      width: 600px;
+      max-width: 600px;
+    }
+  }
+}
