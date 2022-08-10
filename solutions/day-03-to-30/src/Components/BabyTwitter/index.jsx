@@ -99,7 +99,7 @@ const BabyTwitter = () => {
     setTweets((oldTweets) => [
       {
         user: author,
-        text: newPost,
+        text: newPost.trim(),
         datetime: new Date().toLocaleDateString(),
       },
       ...oldTweets,
